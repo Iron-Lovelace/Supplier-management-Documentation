@@ -1,0 +1,7 @@
+baseURL = "https://Iron-Lovelace.github.io/Supplier-management-Documentation/"
+title = "Supplier Management Docs"
+theme = ["doks"]
+
+# Configurações cruciais para o GitHub Pages funcionar em subpasta
+canonifyURLs = true
+relativeURLs = false
