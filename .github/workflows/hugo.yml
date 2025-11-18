@@ -40,14 +40,14 @@ jobs:
       - name: Install Node Dependencies
         run: npm ci
 
-      - name: Clean Hugo Module Cache
-        run: hugo mod clean
-
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: ${{ env.HUGO_VERSION }}
           extended: true
+
+      - name: Clean Hugo Module Cache
+        run: hugo mod clean
 
       - name: Build with Hugo
         run: hugo --minify
