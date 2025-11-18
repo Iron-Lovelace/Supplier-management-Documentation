@@ -23,11 +23,11 @@ navBarButtonUrl = "/docs/prologue/introduction/"
 navBarButtonText = "Get started"
 
 # FlexSearch
-flexSearch = true
-flexSearchConfig = "flexsearch.pt.js" # A CRÍTICA
-searchExclKinds = []
-showSearch = []
-indexSummary = false
+  flexSearch = true
+  flexSearchConfig = "js/flexsearch.pt.js"
+  searchExclKinds = ["taxonomy", "term"]
+  showSearch = []
+  indexSummary = false
 
 ## Search results
 showDate = false
