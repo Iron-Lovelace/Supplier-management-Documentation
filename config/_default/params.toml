@@ -26,7 +26,7 @@ mainSections = ["docs"]
 
   # FlexSearch
   flexSearch = true # true (default) or false
-  flexSearchConfig = "flexsearch.pt.js" #
+  flexSearchConfig = "flexsearch.pt.js"
   searchExclKinds = []
   showSearch = [] # [] (all pages, default) or homepage (optionally) and list of sections (e.g. ["homepage", "blog", "guides"])
   indexSummary = false # true or false (default); whether to index only the `.Summary` instead of the full `.Content`; limits the respective JSON field size and thus increases loading time
