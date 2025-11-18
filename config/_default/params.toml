@@ -26,8 +26,8 @@ mainSections = ["docs"]
 
   # FlexSearch
   flexSearch = true # true (default) or false
-  searchExclKinds = [] # list of page kinds to exclude from search indexing (e.g. ["home", "taxonomy", "term"] )
-  searchExclTypes = [] # list of content types to exclude from search indexing (e.g. ["blog", "docs", "legal", "contributors", "categories"])
+  flexSearchConfig = "flexsearch.pt.js" #
+  searchExclKinds = []
   showSearch = [] # [] (all pages, default) or homepage (optionally) and list of sections (e.g. ["homepage", "blog", "guides"])
   indexSummary = false # true or false (default); whether to index only the `.Summary` instead of the full `.Content`; limits the respective JSON field size and thus increases loading time
 
@@ -139,4 +139,4 @@ mainSections = ["docs"]
     blogPosting = ["blog"] # BlogPosting sections
     product = [] # Product sections
 
-flexSearchConfig = "flexsearch.pt.js"
+
