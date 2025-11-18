@@ -25,7 +25,7 @@ mainSections = ["docs"]
   navBarButtonText = "Get started"
 
   # FlexSearch
-  flexSearch = true # true (default) or false
+  flexSearch = true
   flexSearchConfig = "flexsearch.pt.js"
   searchExclKinds = []
   showSearch = [] # [] (all pages, default) or homepage (optionally) and list of sections (e.g. ["homepage", "blog", "guides"])
