@@ -2,7 +2,7 @@ name: Deploy Doks
 
 on:
   push:
-    branches: ["main"]
+    branches: ["gitpage"]
   workflow_dispatch:
 
 permissions:
