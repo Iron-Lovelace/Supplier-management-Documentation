@@ -5,3 +5,19 @@ theme = ["github.com/h-enk/doks"]
 
 canonifyURLs = true
 relativeURLs = false
+
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.128.0"
+
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "node_modules"
+    target = "assets/js/node_modules"
