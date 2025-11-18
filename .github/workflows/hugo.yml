@@ -22,7 +22,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.135.0
+      HUGO_VERSION: 'latest'
       HUGO_ENV: production
     steps:
       - name: Checkout
@@ -31,7 +31,6 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
-      # Passo ESSENCIAL para o Doks (Processa o CSS/JS)
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
