@@ -1,17 +1,28 @@
+
+
 baseURL = "https://Iron-Lovelace.github.io/Supplier-management-Documentation/"
 title = "Supplier Management Docs"
+languageCode = "pt-br"
+paginate = 10
+defaultContentLanguage = "pt-br"
 theme = ["github.com/h-enk/doks"]
 
-
+# Configurações para GitHub Pages
 canonifyURLs = true
 relativeURLs = false
+
+
+[languages]
+  [languages."pt-br"] # Use as aspas para o código com traço
+    title = "Supplier Management Docs"
+    languageName = "Português"
+    contentDir = "content"
 
 
 [module]
   [module.hugoVersion]
     extended = true
     min = "0.128.0"
-
   [[module.mounts]]
     source = "assets"
     target = "assets"
