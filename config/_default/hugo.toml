@@ -3,7 +3,6 @@
 baseURL = "https://Iron-Lovelace.github.io/Supplier-management-Documentation/"
 title = "Supplier Management Docs"
 languageCode = "pt-br"
-paginate = 10
 defaultContentLanguage = "pt-br"
 theme = ["github.com/h-enk/doks"]
 
@@ -32,3 +31,5 @@ relativeURLs = false
   [[module.mounts]]
     source = "node_modules"
     target = "assets/js/node_modules"
+  [pagination]
+    pagerSize = 10
