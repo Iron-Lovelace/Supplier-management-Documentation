@@ -1,79 +1,42 @@
-# Hugo
-title = "My Docs"
-description = "Congrats on setting up a new Doks project!"
-images = ["cover.png"]
-
-# mainSections
-mainSections = ["docs"]
-
-[social]
-  twitter = "getdoks"
+# Doks params.toml
 [doks]
-# Color mode
 colorMode = "auto"
 colorModeToggler = true
-
-# Navbar
 navbarSticky = true
 containerBreakpoint = "lg"
-
-## Button
 navBarButton = false
 navBarButtonUrl = "/docs/prologue/introduction/"
 navBarButtonText = "Get started"
-
-# FlexSearch
-  flexSearch = true
-  flexSearchConfig = "js/flexsearch.pt.js"
-  searchExclKinds = ["taxonomy", "term"]
-  showSearch = []
-  indexSummary = false
-
-## Search results
+flexSearch = true
+flexSearchConfig = "js/flexsearch.pt.js"
+searchExclKinds = ["taxonomy", "term"]
+showSearch = []
+indexSummary = false
 showDate = false
 showSummary = true
 searchLimit = 99
-
-# Global alert
 alert = false
 alertDismissable = true
-
-# Bootstrap
 bootstrapJavascript = false
-
-# Nav
 sectionNav = ["docs"]
 toTopButton = false
 breadcrumbTrail = false
 headlineHash = true
 scrollSpy = true
-
-# Multilingual
 multilingualMode = false
 showMissingLanguages = true
-
-# Versioning
 docsVersioning = false
 docsVersion = "1.0"
-
-# UX
 headerBar = false
 backgroundDots = true
-
-# Homepage
 sectionFooter = false
-
-# Blog
 relatedPosts = false
 imageList = true
 imageSingle = true
-
-# Repository
 editPage = false
 lastMod = false
 repoHost = "GitHub"
 docsRepo = "https://github.com/h-enk/doks"
 docsRepoBranch = "main"
 docsRepoSubPath = ""
-
 krokiURL = "https://kroki.io"
