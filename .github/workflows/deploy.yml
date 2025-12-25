@@ -3,7 +3,9 @@ on:
   push:
     branches:
       - main
-      - master
+      - GH2
+
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -36,7 +38,4 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Deploy to gh-pages branch
-        # O comando 'mkdocs gh-deploy' faz a mágica:
-        # 1. Builda o site
-        # 2. Faz push da pasta 'site/' para a branch 'gh-pages' automaticamente
         run: mkdocs gh-deploy --force
