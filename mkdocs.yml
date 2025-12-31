@@ -1,0 +1,50 @@
+site_name: Supplier Management Docs
+site_url: https://Iron-Lovelace.github.io/Supplier-management-Documentation/
+repo_url: https://github.com/Iron-Lovelace/Supplier-management-Documentation/
+repo_name: GitHub  # Aparece no canto superior direito
+
+# Configuração do Tema (Material for MkDocs)
+theme:
+  name: material
+  language: pt-BR
+  palette:
+    # Alternância Claro/Escuro (igual ao seu params.toml colorModeToggler)
+    - scheme: default
+      primary: teal
+      accent: purple
+      toggle:
+        icon: material/brightness-7
+        name: Mudar para modo escuro
+    - scheme: slate
+      primary: teal
+      accent: lime
+      toggle:
+        icon: material/brightness-4
+        name: Mudar para modo claro
+  features:
+    - navigation.top        # Botão voltar ao topo
+    - navigation.tracking   # URL muda ao rolar a página
+    - search.suggest        # Sugestões na busca
+    - search.highlight      # Destaca termo buscado
+    - content.code.copy     # Botão de copiar em blocos de código
+  icon:
+    repo: fontawesome/brands/github
+
+# Extensões (Markdown tunado)
+markdown_extensions:
+  - admonition              # Caixas de aviso (Note, Warning)
+  - pymdownx.details        # Blocos colapsáveis
+  - pymdownx.highlight:     # Highlight de código
+      anchor_linenums: true
+  - pymdownx.superfences    # Permite aninhamento de blocos
+  - pymdownx.tabbed:        # Abas de conteúdo
+      alternate_style: true
+  - toc:
+      permalink: true       # Links diretos para seções (#)
+
+# Navegação
+# Se você não definir 'nav' aqui, o MkDocs cria automaticamente
+# baseado na ordem alfabética das pastas em /docs.
+# nav:
+#   - Home: index.md
+#   - ...
